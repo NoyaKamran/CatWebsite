@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Cats Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4e6ff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .header {
+            background-color: #ff9eb1;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff6699;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .cat-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .cat-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .cat-card:hover {
+            transform: scale(1.05);
+        }
+
+        .cat-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .fact {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .cat-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Cute Cats Corner!</h1>
+        <p>Meow! Discover the world of adorable cats.</p>
+    </div>
+
+    <div class="cat-container">
+        <div class="cat-card">
+            <img src="https://placekitten.com/200/150" alt="Cute kitten" class="cat-image">
+            <h2>Fluffy</h2>
+            <p>Cats are known for their agility and playful nature.</p>
+            <p class="fact">Did you know? Cats sleep for about 12-16 hours a day!</p>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://placekitten.com/201/150" alt="Playful cat" class="cat-image">
+            <h2>Whiskers</h2>
+            <p>Cats have a special organ called the Jacobson's organ to detect scents.</p>
+            <p class="fact">Fun fact: A group of cats is called a clowder!</p>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://placekitten.com/202/150" alt="Sleepy cat" class="cat-image">
+            <h2>Paws</h2>
+            <p>Cats use their tails for balance and communication.</p>
+            <p class="fact">Cats can make over 100 different sounds!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cute Cats Corner. All rights reserved. Meow!</p>
+    </footer>
+</body>
+</html>
